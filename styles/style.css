@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -9,13 +10,12 @@ html {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
 }
 
 :root {
-  --font-stack: "Poppins", sans-serif;
-  --font-size: 1.125rem;
   --footer-bg: #354150;
+  --font-size: 1.125rem;
+  --font-stack: "Poppins", sans-serif;
   --header-bg: linear-gradient(60deg, #424242 0%, #1e1e1e 100%);
   --navbar-bg: #bd2035;
   --primary-color: #fff;
@@ -28,6 +28,11 @@ body {
   font-family: var(--font-stack);
   font-size: var(--font-size);
   line-height: 1.5;
+}
+
+h1,
+h2 {
+  font-weight: 600;
 }
 
 #navbar {
@@ -74,12 +79,6 @@ body {
   text-align: center;
 }
 
-h1,
-h2 {
-  font-weight: 600;
-}
-
-
 #welcome-section p {
   color: #bd2035;
   font-style: italic;
@@ -106,17 +105,17 @@ main {
 
 .project-tile {
   display: grid;
-  margin: 4rem auto;
-  max-width: 1320px;
   gap: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+  margin: 4rem auto;
+  max-width: 1320px;
 }
 
 .project-tile a {
-  color: inherit;
   background-color: #384454;
   border-radius: 5px;
   box-shadow: 1px 1px 2px rgb(30 30 30 / 0.5);
+  color: inherit;
   text-decoration: none;
 }
 
@@ -179,9 +178,11 @@ main {
 #projects > a span::after {
   content: ">";
   display: inline-block;
-  font-weight: bold;
+  font-weight: 700;
   margin-left: 0.4rem;
-  transition: transform 0.4s ease-out;
+  transition-duration: 0.4s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
 }
 
 #projects > a:hover span::after {
@@ -229,7 +230,7 @@ main {
 }
 
 .social-media-div a:hover {
-  transform: translateY(1rem);
+  transform: translateY(12px);
 }
 
 .social-media-div img {
@@ -237,8 +238,8 @@ main {
 }
 
 .social-media-div p {
-  text-shadow: 2px 2px 2px #1e1e1e;
   font-size: 1.3em;
+  text-shadow: 2px 2px 2px #1e1e1e;
 }
 
 footer {
