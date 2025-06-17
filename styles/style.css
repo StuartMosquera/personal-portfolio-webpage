@@ -1,3 +1,4 @@
+/* Reset styles */
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -12,6 +13,7 @@ html {
   padding: 0;
 }
 
+/* Global variables */
 :root {
   --footer-bg: #354150;
   --font-size: 1.125rem;
@@ -22,6 +24,7 @@ html {
   --section-bg: #3a5083;
 }
 
+/* Global styles */
 body {
   background-color: var(--section-bg);
   color: var(--primary-color);
@@ -35,6 +38,7 @@ h2 {
   font-weight: 600;
 }
 
+/* Nav styles */
 #navbar {
   align-items: center;
   background: var(--navbar-bg);
@@ -66,6 +70,7 @@ h2 {
   text-decoration: none;
 }
 
+/* Header styles */
 #welcome-section {
   align-items: center;
   background: var(--header-bg);
@@ -85,10 +90,12 @@ h2 {
   font-weight: 200;
 }
 
+/* Main Content styles */
 main {
   margin-top: 6rem;
 }
 
+/* Projects Section styles */
 #projects {
   background-color: var(--section-bg);
   padding-bottom: 6.5rem;
@@ -192,6 +199,7 @@ main {
   transform: translateX(2px);
 }
 
+/* Contact Section styles */
 #contact {
   align-items: center;
   background-color: var(--footer-bg);
@@ -245,6 +253,7 @@ main {
   text-shadow: 2px 2px 2px #1e1e1e;
 }
 
+/* Footer styles */
 footer {
   align-items: center;
   background: var(--footer-bg);
@@ -254,11 +263,14 @@ footer {
   justify-content: center;
 }
 
+/* Responsive styles */
 @media screen and (max-width: 768px) {
+  /* Global styles */
   body {
     --font-size: 1rem;
   }
 
+  /* Nav styles */
   #navbar {
     justify-content: center;
   }
