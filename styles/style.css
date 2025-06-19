@@ -17,7 +17,7 @@ html {
 :root {
   --footer-bg: #354150;
   --font-size: 1.125rem;
-  --font-stack: "Poppins", sans-serif;
+  --font-stack: 'Poppins', sans-serif;
   --header-bg: linear-gradient(60deg, #424242 0%, #1e1e1e 100%);
   --navbar-bg: #bd2035;
   --primary-color: #fff;
@@ -142,11 +142,11 @@ main {
 }
 
 .project-tile span::before {
-  content: "< ";
+  content: '< ';
 }
 
 .project-tile span::after {
-  content: " />";
+  content: ' />';
 }
 
 .project-tile span::before,
@@ -186,7 +186,7 @@ main {
 }
 
 #projects > a span::after {
-  content: ">";
+  content: '>';
   display: inline-block;
   font-weight: 700;
   margin-left: 0.4rem;
